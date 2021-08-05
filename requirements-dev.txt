@@ -1,0 +1,5 @@
+pytest>=2.8.0,<=4.6.11
+pytest-cov
+pytest-mock==2.0.0
+requests
+prometheus-client
