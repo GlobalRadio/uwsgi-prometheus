@@ -22,7 +22,7 @@ Add the following in your `uwsgi.py`:
 The following stats will then be added to your existing metrics endpoint:
 
 - **uwsgi_listen_queue_requests** - Number of requests in the uWSGI listen queue
-- **uwsgi_request_total** - Total number of uWSGI requests across all workers  
+- **uwsgi_requests_total** - Total number of uWSGI requests across all workers  
 - **uwsgi_harakiris_total** - Total number of harakiris across all workers  
 
 # Configuration
@@ -31,7 +31,7 @@ A few configuration options are available on the collector:
 
 - **stats_url** - The URL that uWSGI is exposing stats on `Default: http://127.0.0.1:1717`
 - **timeout** - The timeout for fetching stats `Default: 2`
-- **prefix** - A prefix for the exported metrics (An underscore is automatically added if specified) `Default: ''`
+- **prefix** - A prefix for the exported metrics `Default: ''`
 
 ```
 REGISTRY.register(UWSGIStatsCollector(
