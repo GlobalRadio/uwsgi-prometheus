@@ -1,7 +1,7 @@
 import os
 import re
-
 from io import open
+
 from setuptools import find_packages, setup
 
 
@@ -33,7 +33,7 @@ setup(
     author_email='chris.graham@global.com',
     packages=find_packages(),
     include_package_data=True,
-    python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*",
+    python_requires=">=3.8",
     install_requires=[
         'prometheus-client',
         'requests',
@@ -43,17 +43,16 @@ setup(
         'Natural Language :: English',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
     ],
     tests_require=[
-        'pytest>=2.8.0,<=4.6.11',
+        'pytest>=7.0.0,<8.0.0',
         'pytest-cov',
-        'pytest-mock==2.0.0',
+        'pytest-mock>=3.0.0',
     ],
 )
