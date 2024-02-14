@@ -2,7 +2,7 @@ Releases
 ========
 
 
-1.0.0 (2024-02-15)
+1.0.0 (2024-02-14)
 ------------------
 
 (This release source code is identical to ``0.0.1`` except dependancy changes related to updated version support)
